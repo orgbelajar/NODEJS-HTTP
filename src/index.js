@@ -9,7 +9,7 @@ const requestListener = (request, response) => {
         response.end(JSON.stringify({
             status: 'fail',
             message: 'method not allowed',
-            data: {}, // data kosong / tdk membawa data apapun
+            data: {}, // data kosong / tdk memberi data apapun
         }));
         return; // biar langsung keluar dan tidak mengeksekusi kode yg dibawahnya
     }
