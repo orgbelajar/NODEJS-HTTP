@@ -4,12 +4,20 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon src/index.js"
+    "dev:native": "nodemon src/native.js",
+    "dev:express": "nodemon src/express.js",
+    "dev:fastify": "nodemon src/fastify.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "nodemon": "^3.1.4"
+  },
+  "dependencies": {
+    "@fastify/cors": "^9.0.1",
+    "cors": "^2.8.5",
+    "express": "^4.19.2",
+    "fastify": "^4.28.1"
   }
 }
